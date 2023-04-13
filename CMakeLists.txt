@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.12)
+project(LIBFORMULA)
+set(SRC_LIST formulas.c functions.c network.c phyformula.c hextrs.c cpcolfunc.c shvector.c shcomplex.c)
+add_compile_options(-O2 -s -std=c99 -Wall -I ${PROJECT_SOURCE_DIR}/include -fPIC)
+add_library(formula SHARED ${SRC_LIST})
