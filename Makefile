@@ -3,7 +3,7 @@
 # Copyright (C) 2022-2023 NULL_703. All rights reserved.
 # Created on 2022.7.15  13:51
 # Created by NULL_703
-# Last change time on 2023.4.13  22:06
+# Last change time on 2023.4.16  10:58
 #*************************************************************************
 cpp := g++
 gc := gcc
@@ -25,4 +25,4 @@ $(lib): $(obj)
 .PHONY: clean
 clean:
 	rm *.o
-	rm ./bin
+	rm -rf ./bin
