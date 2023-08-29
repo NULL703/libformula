@@ -1,9 +1,9 @@
 /************************************************************************
 十六进制转换。
-Copyright (C) 2022 NULL_703. All rights reserved.
+Copyright (C) 2022-2023 NULL_703. All rights reserved.
 Created on 2022.3.17  10:52
 Created by NULL_703
-Last change time on 2022.5.29  20:17
+Last change time on 2023.8.14  15:19
 ************************************************************************/
 #include <functions.h>
 
@@ -57,7 +57,7 @@ int shk_HexToDec(const char* hexValue)
         }
     }
     for(int j = 0; hexBit >= 0; ++j, --hexBit)
-        result += results[j] * (int)shk_pow(16, hexBit);
+        result += results[j] * (int)shk_pow(16, hexBit - 1);
     return result;
 }
 
